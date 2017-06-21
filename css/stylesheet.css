@@ -1,0 +1,209 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  height: auto; }
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important; }
+
+.navbar {
+  min-height: 50px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #6E9ECF; }
+  .navbar-brand img {
+    margin-top: -20px;
+    width: 230px; }
+
+.navbar-default .navbar-nav li {
+  color: #000; }
+  .navbar-default .navbar-nav li a {
+    color: #003acd;
+    text-transform: uppercase; }
+
+#content .container {
+  border: 2px solid #e7e7e7;
+  border-radius: 7px;
+  padding-bottom: 100px;
+  margin-bottom: 50px; }
+
+#article {
+  padding: 0 20px;
+  margin: 0 5px;
+  line-height: 1.6em; }
+  #article a.link {
+    color: #0149ff;
+    font-weight: bold; }
+    #article a.link:hover {
+      color: #0E529E;
+      text-decoration: none; }
+  #article #article-content {
+    margin-bottom: 10px; }
+    #article #article-content:last-child {
+      margin-bottom: 100px; }
+  #article h1 {
+    font-size: 2.9em;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Helvetica'; }
+  #article span.time {
+    display: block;
+    padding-top: 5px;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    color: #aaa;
+    font-size: 0.8em; }
+  #article h4 {
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: 'Helvetica';
+    color: #000; }
+  #article article {
+    font-size: 1.15em;
+    margin-bottom: 20px; }
+    #article article img {
+      margin: 0 15px;
+      float: left;
+      display: inline; }
+  #article blockquote {
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: #F1F1F1;
+    border-left: 7px solid #1A5CA7; }
+    #article blockquote a.link {
+      color: #0149ff;
+      font-weight: bold; }
+      #article blockquote a.link:hover {
+        color: #0E529E;
+        text-decoration: none; }
+    #article blockquote span {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #C00303;
+      font-family: Helvetica;
+      font-size: 1.15em; }
+  #article ol {
+    margin-left: 50px; }
+    #article ol a {
+      color: #0149ff;
+      font-weight: bold; }
+      #article ol a:hover {
+        color: #0E529E;
+        text-decoration: none; }
+  #article button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #0184ff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: 'Helvetica'; }
+    #article button:hover {
+      background-color: #31B0D5; }
+
+#side-content {
+  padding: 0 40px; }
+  #side-content img.icons {
+    display: inline-block;
+    float: right;
+    margin-top: 15px; }
+  #side-content h1 {
+    font-size: 1.5em;
+    color: #0F72C2;
+    display: inline-block; }
+  #side-content hr.divider {
+    margin-top: 0;
+    width: 100%;
+    border-color: #ddd; }
+  #side-content #recent {
+    margin-bottom: 20px; }
+    #side-content #recent img {
+      float: left;
+      width: 50px;
+      margin-right: 20px; }
+    #side-content #recent h2 {
+      font-size: 1.1em;
+      margin-top: 0px;
+      display: block; }
+    #side-content #recent:last-child {
+      background-color: #F1F1F1;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 1em; }
+    #side-content #recent button.amount {
+      background-color: #FFA23E;
+      width: 100%;
+      margin-top: 10px;
+      font-weight: bold;
+      font-family: 'Helvetica';
+      font-size: 1.3em;
+      color: #000;
+      background: #ff942e;
+      background: -webkit-linear-gradient(#FFBF5E, #ff942e);
+      background: -o-linear-gradient(#FFBF5E, #ff942e);
+      background: -moz-linear-gradient(#FFBF5E, #ff942e);
+      background: linear-gradient(#FFBF5E, #ff942e); }
+      #side-content #recent button.amount:after {
+        content: '';
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)); }
+      #side-content #recent button.amount:hover {
+        background: #ff942e;
+        background: -webkit-linear-gradient(#ff942e, #FFBF5E);
+        background: -o-linear-gradient(#ff942e, #FFBF5E);
+        background: -moz-linear-gradient(#ff942e, #FFBF5E);
+        background: linear-gradient(#ff942e, #FFBF5E);
+        color: #0E529E; }
+  #side-content h4 {
+    color: #E60545;
+    font-size: 1.3em;
+    font-family: Helvetica; }
+  #side-content #amount .mortgage {
+    width: 23%;
+    display: inline-block;
+    text-align: left; }
+    #side-content #amount .mortgage img, #side-content #amount .mortgage span {
+      display: inline-block;
+      vertical-align: middle; }
+    #side-content #amount .mortgage img {
+      width: 30px; }
+    #side-content #amount .mortgage span {
+      font-size: 11px;
+      font-family: 'Helvetica';
+      font-weight: bold;
+      margin-top: 7px; }
+  #side-content #amount .clearfix:before, #side-content #amount .clearfix:after {
+    content: " ";
+    display: table; }
+  #side-content #amount .clearfix:after {
+    clear: both; }
+  #side-content #amount .amount > * {
+    float: left;
+    margin: 0; }
+
+footer {
+  background-color: #C8C8C8;
+  font-size: 0.8em;
+  color: #777;
+  padding: 20px; }
+
+@media (max-width: 300px) {
+  #article h1 {
+    font-size: 2em; }
+  #article h4 {
+    font-size: 1.5em; }
+  #article button {
+    font-size: 0.95em; } }
+
+/*# sourceMappingURL=stylesheet.css.map */

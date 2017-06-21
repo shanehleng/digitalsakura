@@ -1,0 +1,28 @@
+@mixin box-sizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin imgResponsive {
+	width: auto;
+	max-width: 100%;
+	height: auto !important;
+}
+
+@mixin gradient {
+    background: #ff942e; 
+    background: -webkit-linear-gradient(#FFBF5E, #ff942e); 
+    background: -o-linear-gradient(#FFBF5E, #ff942e); 
+    background: -moz-linear-gradient(#FFBF5E, #ff942e); 
+    background: linear-gradient(#FFBF5E, #ff942e); 
+}
+
+@mixin gradientHover {
+    background: #ff942e;
+    background: -webkit-linear-gradient(#ff942e,#FFBF5E); 
+    background: -o-linear-gradient(#ff942e, #FFBF5E); 
+    background: -moz-linear-gradient(#ff942e, #FFBF5E); 
+    background: linear-gradient(#ff942e, #FFBF5E);
+}

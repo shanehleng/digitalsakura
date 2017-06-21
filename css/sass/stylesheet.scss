@@ -1,0 +1,312 @@
+@import '_font-face';
+@import '_reset';
+@import '_variables';
+@import '_mixins';
+
+img {
+	@include imgResponsive;
+}
+
+// Navigation
+.navbar {
+	min-height: 50px;
+	padding: 20px;
+	background-color: $headerbg;
+	border-bottom: $headerBorder;
+
+	&-brand img {
+		margin-top: -20px;
+		width: 230px;
+	}
+}
+
+.navbar {
+	&-default {
+		.navbar-nav{
+			li {
+
+				color: #000;
+
+				a {
+					color: darken($linkColor, 10%);
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+// Content
+
+#content .container {
+	border: 2px solid #e7e7e7;
+	border-radius: 7px;
+	padding-bottom: 100px;
+	margin-bottom: 50px;
+}
+
+#article {
+	// border: 1px solid gray;
+	padding: 0 20px;
+	margin: 0 5px;
+	line-height: 1.6em;
+
+	a.link {
+			color: $linkColor;
+			font-weight: bold;
+
+			&:hover {
+				color: #0E529E;
+				text-decoration: none;
+			}
+	}
+
+	#article-content {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 100px;
+		}
+	}
+
+	h1 {
+		font-size: 2.9em;
+		font-weight: bold;
+		color: #000;
+		font-family: 'Helvetica';
+	}
+
+	span.time {
+		display: block;
+		padding-top: 5px;
+		border: 1px solid #ddd;
+		border-left: none;
+		border-right: none;
+		color: #aaa;
+		font-size: 0.8em;
+	}
+
+	h4 {
+		font-size: 1.6em;
+		font-weight: bold;
+		font-family: 'Helvetica';
+		color: #000;
+	}
+
+	article {
+
+		font-size: 1.15em;
+		margin-bottom: 20px;
+
+		img {
+			margin: 0 15px;
+			float: left;
+			display: inline;		}
+	}
+
+	blockquote {
+		padding: 20px;
+		font-size: 1.2em;
+		background-color: #F1F1F1;
+		border-left: 7px solid #1A5CA7;
+
+		a.link {
+			color: $linkColor;
+			font-weight: bold;
+
+			&:hover {
+				color: #0E529E;
+				text-decoration: none;
+			}
+		}
+
+		span {
+			text-transform: uppercase;
+			font-weight: bold;
+			color: #C00303;
+			font-family: Helvetica;
+			font-size: 1.15em;
+		}
+	}
+
+	ol {
+			margin-left: 50px;
+			
+			a {
+				color: $linkColor;
+				font-weight: bold;
+
+				&:hover {
+					color: #0E529E;
+					text-decoration: none;
+
+				}
+			}
+		}
+
+	button {
+		display: block;
+		width: 100%;
+		padding: 20px;
+		background-color: $buttonColor;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.1em;
+		font-family: 'Helvetica';
+
+		&:hover {
+			background-color: #31B0D5;
+		}
+	}
+}
+
+//Side 
+#side {
+
+	&-content {
+
+		padding: 0 40px;
+
+		img.icons {
+			display: inline-block;
+			float: right;
+			margin-top: 15px;
+		}
+
+		h1 {
+			font-size: 1.5em;
+			color: #0F72C2;
+			display: inline-block;
+		}
+
+		hr.divider {
+			margin-top: 0;
+			width: 100%;
+			border-color: #ddd;
+		}
+
+		#recent {
+			margin-bottom: 20px;
+
+			img {
+				float: left; 
+				width: 50px;
+				margin-right: 20px;
+			}
+
+			h2 {
+				font-size: 1.1em;
+				margin-top: 0px;
+				display: block;
+			}
+
+			&:last-child {
+				background-color: #F1F1F1;
+				padding: 20px 10px;
+				text-align: center;	
+				font-size: 1em;
+			}
+
+
+			button.amount {
+				background-color: #FFA23E;
+				width: 100%;
+				margin-top: 10px;
+				font-weight: bold;
+				font-family: 'Helvetica';
+				font-size: 1.3em;
+				color: #000;
+
+				@include gradient;
+
+				&:after {
+					content: '';
+					background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+
+				}
+
+				&:hover {
+					@include gradientHover;
+					color: #0E529E;
+				}
+			}
+		}
+		
+		h4 {
+			color: #E60545;
+			font-size: 1.3em;
+			font-family: Helvetica;
+		}
+
+		#amount {
+
+			.mortgage {
+
+				width: 23%;
+				display: inline-block;
+				text-align: left;
+
+
+				img, span {
+					display: inline-block;
+					vertical-align: middle;
+				}
+				
+				img {
+					width: 30px;
+				}
+
+				span {
+					font-size: 11px;
+					font-family: 'Helvetica';
+					font-weight: bold;
+					margin-top: 7px;
+				}
+			}
+
+			.clearfix {
+				&:before, 
+				&:after {
+					content: " ";
+					display: table;
+				}
+
+				&:after {
+					clear: both;
+				}
+			}
+
+			.amount > * {
+				float: left;
+				margin: 0;
+			}
+		}
+	}
+}
+
+// Footer 
+footer {
+	background-color: #C8C8C8;
+	font-size: 0.8em;
+	color: #777;
+	padding: 20px;
+}
+
+
+// Media Screens
+@media (max-width: 300px) {
+
+    #article  {
+    	h1 {
+    		font-size: 2em;
+		}
+
+    	h4 {
+			font-size: 1.5em;
+		}	
+
+		button {
+			font-size: 0.95em;
+		}
+    }
+}

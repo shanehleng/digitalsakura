@@ -1,0 +1,4 @@
+// READ ME
+
+
+1. Open the file index.html on your browser to view the landing page test I made.
